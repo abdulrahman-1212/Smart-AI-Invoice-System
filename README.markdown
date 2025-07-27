@@ -75,6 +75,11 @@ A Streamlit-based application that extracts and manages invoice data using the L
 - The `models` directory is created to store fine-tuned model files.
 - Raw OCR text is displayed for debugging purposes (`st.write("Raw OCR Text:", text)`).
 
+## Future Work
+- **Fine-Tune the Model**: Implement a more robust fine-tuning process using real invoice data and corrections stored in the database to improve extraction accuracy, potentially with labeled datasets and hyperparameter tuning.
+- **Better Auto Fine-Tune Mechanism**: Develop an automated fine-tuning pipeline that triggers based on a threshold of correction data (e.g., 10+ corrections), integrates with the LayoutLM model, and evaluates performance metrics (e.g., F1 score) to select the best model version.
+- **Better App Interface**: Enhance the user interface with a more intuitive layout, including a progress bar for file processing, a collapsible edit panel, and responsive design for mobile devices using custom CSS or Streamlit components.
+
 ## License
 [MIT License](LICENSE) (Add a `LICENSE` file with MIT terms if desired.)
 
